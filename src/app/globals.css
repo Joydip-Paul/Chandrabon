@@ -1,0 +1,37 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* Map Tailwind color/shadow tokens to your CSS variables */
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-txtColor: var(--txtColor);
+  --color-txtColorSecondary: var(--txtColorSecondary);
+
+  /* shadows use --shadow-* tokens */
+  --shadow-custom-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Your variables */
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --primary: #20B46A;
+  --secondary: #020210;
+  --border: #d1d5db;
+  --txtColor: #020210;
+  --txtColorSecondary: #9A9A9F;
+}
+
+/* Dark mode (put `class="dark"` on <html> to enable) */
+.dark {
+  --background: #111111;
+  --foreground: #ffffff;
+  --primary: #3b82f6;
+  --secondary: #a855f7;
+  --txtColor: #ffffff;
+  --txtColorSecondary: #a1a1aa;
+}
