@@ -1,4 +1,4 @@
-import { baseUrl } from "./config";
+// import { baseUrl } from "./config";
 
 export type Product = {
   id: number;
@@ -7,8 +7,16 @@ export type Product = {
   price: string;
 };
 
-export default async function getAllFeaturedProducts(): Promise<Product[]> {
-  const response = await fetch(`${baseUrl}/data/featuredProducts.json`);
+// export default async function getAllFeaturedProducts(): Promise<Product[]> {
+//   const response = await fetch(`${baseUrl}/data/featuredProducts.json`);
 
+//   return response.json();
+// }
+
+export async function getAllFeaturedProducts(): Promise<Product[]> {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || ''}/data/featuredProducts.json`, {
+    cache: "no-store",
+  });
   return response.json();
 }
+

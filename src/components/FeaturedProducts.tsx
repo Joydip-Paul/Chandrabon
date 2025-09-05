@@ -1,4 +1,5 @@
-import getAllFeaturedProducts from "@/lib/getFeaturedProducts";
+
+import { getAllFeaturedProducts } from "@/lib/getFeaturedProducts";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
