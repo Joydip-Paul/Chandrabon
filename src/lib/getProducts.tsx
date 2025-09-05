@@ -1,9 +1,14 @@
-import React from 'react'
+import { baseUrl } from "./config";
 
-function getProducts() {
-  return (
-    <div>getProducts</div>
-  )
+export interface Product {
+  id: number;
+  name: string;
+  thumb: string;
+  price: string;
 }
 
-export default getProducts
+export async function getProducts(): Promise<Product[]> {
+  const response = await fetch(`${baseUrl}/data/products.json`);
+  return response.json();
+}
+

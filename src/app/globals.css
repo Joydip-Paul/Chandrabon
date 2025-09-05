@@ -35,3 +35,45 @@
   --txtColor: #ffffff;
   --txtColorSecondary: #a1a1aa;
 }
+
+@utility container {
+  width: 100%;
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(0.9375rem, -9.3621rem + 16.629vw, 10.125rem);
+  padding-right: clamp(0.9375rem, -9.3621rem + 16.629vw, 10.125rem);
+}
+
+@utility main-btn {
+  color: #f1f1f1;
+  background-color: #26261e;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@utility main-btn-transparent {
+  border: 1px solid #26261e;
+  color: #26261e;
+  background-color: transparent;
+}
+
+.main-btn-transparent:hover {
+  color: #f1f1f1;
+  background-color: #26261e;
+  transition: 1s all;
+}
+
+@utility horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@utility vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

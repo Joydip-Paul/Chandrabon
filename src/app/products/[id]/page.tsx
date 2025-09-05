@@ -1,9 +1,58 @@
-import React from 'react'
+import Image from "next/image";
+import products from "@/../public/data/products.json";
+import { notFound } from "next/navigation";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  thumb: string;
 }
 
-export default page
+interface ProductsProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function ProductDetails({ params }: ProductsProps) {
+  const { id } = params;
+
+  // JSON থেকে product বের করো
+  const product = (products as Product[]).find(
+    (item) => item.id === Number(id)
+  );
+
+  if (!product) {
+    return notFound();
+  }
+
+  return (
+    <div className="container mx-auto py-12 px-4">
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="relative w-full h-[400px]">
+          <Image
+            src={product.thumb}
+            alt={product.name}
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div>
+          <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+          <p className="text-2xl text-green-600 font-semibold mb-6">
+            Price: ৳{product.price}
+          </p>
+          <p className="text-gray-600 mb-8">
+            This is a beautiful Moniputi sharee. Perfect for any occasion and
+            crafted with care.
+          </p>
+          <button className="main-btn">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
