@@ -33,9 +33,9 @@ const Page = async () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{item.price}</p>
 
-                <button className="main-btn w-full">
-                  <Link href={`/products/${item.id}`}>Order Now</Link>
-                </button>
+                <Link href={`/products/${item.id}`}>
+                  <button className="main-btn w-full">Order Now</button>
+                </Link>
               </div>
             </div>
           ))}

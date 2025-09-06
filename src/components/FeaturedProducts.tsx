@@ -1,4 +1,3 @@
-
 import { getAllFeaturedProducts } from "@/lib/getFeaturedProducts";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,9 +43,11 @@ export default async function FeaturedProducts() {
         </div>
 
         <div className="text-center pt-20">
-          <button className="main-btn main-btn-transparent">
-            <Link href="/products">View All Products</Link>
-          </button>
+          <Link href="/products">
+            <button className="main-btn main-btn-transparent">
+              View All Products
+            </button>
+          </Link>
         </div>
       </div>
     </section>
