@@ -6,6 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 const slides = [
   {
@@ -65,9 +66,12 @@ export default function Hero() {
                 <p className="text-lg md:text-2xl mb-6 font-300 animate-fadeInUp delay-200">
                   {slide.subtitle}
                 </p>
-                <button className="main-btn">
-                  {slide.button}
-                </button>
+
+                <Link href="/products">
+                  <button className="main-btn px-14 py-4">
+                    {slide.button}
+                  </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

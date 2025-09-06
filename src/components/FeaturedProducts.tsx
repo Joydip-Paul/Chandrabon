@@ -36,7 +36,9 @@ export default async function FeaturedProducts() {
                 </h3>
                 <p className="text-gray-600 mb-4">{item.price}</p>
 
-                <button className="main-btn w-full">Order Now</button>
+                <Link href="/products">
+                  <button className="main-btn w-full">Order Now</button>
+                </Link>
               </div>
             </div>
           ))}
