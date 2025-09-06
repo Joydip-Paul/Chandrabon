@@ -1,10 +1,10 @@
 [
-  { "id": 1, "name": "Monipuri sharee", "price": 2500, "thumb": "/img/products/s1.jpeg" },
-  { "id": 2, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s2.jpeg" },
-  { "id": 3, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s3.jpeg" },
-  { "id": 4, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s4.jpeg" },
-  { "id": 5, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s5.jpeg" },
-  { "id": 6, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s6.jpeg" },
-  { "id": 7, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s7.jpeg" },
-   { "id": 8, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s8.jpeg" }
+  { "id": "1cp2500", "name": "Monipuri sharee", "price": 2500, "thumb": "/img/products/s1.jpeg" },
+  { "id": "2cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s2.jpeg" },
+  { "id": "3cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s3.jpeg" },
+  { "id": "4cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s4.jpeg" },
+  { "id": "5cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s5.jpeg" },
+  { "id": "6cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s6.jpeg" },
+  { "id": "7cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s7.jpeg" },
+   { "id": "8cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s8.jpeg" }
 ]

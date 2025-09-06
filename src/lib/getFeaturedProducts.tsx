@@ -1,7 +1,7 @@
 // import { baseUrl } from "./config";
 
 export type Product = {
-  id: number;
+  id: string;
   name: string;
   thumb: string;
   price: number;

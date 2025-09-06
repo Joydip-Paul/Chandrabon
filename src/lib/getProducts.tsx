@@ -1,7 +1,7 @@
-import { baseUrl } from "./config";
+// import { baseUrl } from "./config";
 
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   thumb: string;
   price: string;
