@@ -36,12 +36,29 @@ export default async function FeaturedProducts() {
                 </h3>
                 <p className="text-gray-600 mb-4">Price: {item.price}</p>
 
-                {item?.in_stock ? (
+                {/* {item?.in_stock ? (
                   <Link href="/products">
                     <button className="main-btn w-full">Order Now</button>
                   </Link>
                 ) : (
                   <div className="main-btn cursor-auto bg-gray-600">Stock out</div>
+                )} */}
+
+                {item?.in_stock ? (
+                  <a
+                    href={`https://wa.me/8801346893953?text=Hello, I want to order: ${encodeURIComponent(
+                      item.name
+                    )} (ID: ${item.id})`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="main-btn w-full block text-center"
+                  >
+                    Order Now
+                  </a>
+                ) : (
+                  <div className="main-btn cursor-auto bg-gray-600">
+                    Stock out
+                  </div>
                 )}
               </div>
             </div>

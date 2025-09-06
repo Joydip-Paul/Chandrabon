@@ -7,33 +7,33 @@
     {
       "id": 13213,
       "name": "Monipuri Sharee",
-      "price": 2500,
+      "price": 2750,
       "currency": "BDT",
-      "thumb": "/img/p1.webp",
+      "thumb": "/img/products/s2.jpeg",
       "in_stock": true
     },
     {
       "id": 4231,
       "name": "Monipuri Sharee",
-      "price": 5000,
+      "price": 2750,
       "currency": "BDT",
-      "thumb": "/img/p4.webp",
+      "thumb": "/img/products/s3.jpeg",
       "in_stock": true
     },
     {
       "id": 741242,
       "name": "Monipuri Sharee",
-      "price": 1890,
+      "price": 2750,
       "currency": "BDT",
-      "thumb": "/img/p7.webp",
-      "in_stock": false
+      "thumb": "/img/products/s4.jpeg",
+      "in_stock": true
     },
     {
       "id": 82414235,
       "name": "Monipuri Sharee",
-      "price": 1200,
+      "price": 1690,
       "currency": "BDT",
-      "thumb": "/img/p8.webp",
+      "thumb": "/img/products/s7.jpeg",
       "in_stock": true
     }
   ]

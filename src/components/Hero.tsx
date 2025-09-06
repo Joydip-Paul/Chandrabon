@@ -11,26 +11,27 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    image: "/img/02.jpg",
+    image: "/img/hero1.jpeg",
     title: "Elegant Monipuri Sharee",
-    subtitle: "Traditional & Modern Blend",
+    subtitle: "Handwoven with Authentic Manipuri Craft",
     button: "Shop Now",
   },
   {
     id: 2,
-    image: "/img/03.jpg",
+    image: "/img/hero2.png",
     title: "Exclusive Designer Collection",
-    subtitle: "Feel the Luxury",
+    subtitle: "Where Heritage Meets Modern Elegance",
     button: "Explore",
   },
   {
     id: 3,
-    image: "/img/04.jpg",
+    image: "/img/hero2.png",
     title: "Festive Season Offers",
-    subtitle: "Up to 50% Off",
+    subtitle: "Celebrate Culture with Authentic Weaves",
     button: "Grab Now",
   },
 ];
+
 
 export default function Hero() {
   return (

@@ -33,9 +33,20 @@ const Page = async () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{item.price}</p>
 
-                <Link href={`/products/${item.id}`}>
+                {/* <Link href={`/products/${item.id}`}>
                   <button className="main-btn w-full">Order Now</button>
-                </Link>
+                </Link> */}
+
+                 <a
+                    href={`https://wa.me/8801346893953?text=Hello, I want to order: ${encodeURIComponent(
+                      item.name
+                    )} (ID: ${item.id})`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="main-btn w-full block text-center"
+                  >
+                    Order Now
+                  </a>
               </div>
             </div>
           ))}

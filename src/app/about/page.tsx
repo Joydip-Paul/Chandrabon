@@ -14,7 +14,7 @@ export default function Page() {
       {/* Banner */}
       <div className="relative w-full h-[300px]">
         <Image
-          src="/img/03.jpg" // banner image from your collection
+          src="/img/hero2.png"
           alt="About Chandrabon"
           fill
           className="object-cover"

@@ -10,10 +10,10 @@ const Footer = () => {
         </p>
 
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link href="/privacy" className="text-gray-600 hover:text-blue-600 text-sm">
+          <Link href="/privacy-policy" className="text-gray-600 hover:text-blue-600 text-sm">
             Privacy Policy
           </Link>
-          <Link href="/terms" className="text-gray-600 hover:text-blue-600 text-sm">
+          <Link href="/terms-service" className="text-gray-600 hover:text-blue-600 text-sm">
             Terms of Service
           </Link>
           <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm">

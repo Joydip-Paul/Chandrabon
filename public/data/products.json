@@ -1,10 +1,10 @@
 [
-  { "id": 1, "name": "Monipuri sharee", "price": 2500, "thumb": "/img/p1.webp" },
-  { "id": 2, "name": "Monipuri sharee", "price": 1500, "thumb": "/img/p2.webp" },
-  { "id": 3, "name": "Monipuri sharee", "price": 2300, "thumb": "/img/p3.webp" },
-  { "id": 4, "name": "Monipuri sharee", "price": 5000, "thumb": "/img/p4.webp" },
-  { "id": 5, "name": "Monipuri sharee", "price": 50000, "thumb": "/img/p5.webp" },
-  { "id": 6, "name": "Monipuri sharee", "price": 5200, "thumb": "/img/p6.webp" },
-  { "id": 7, "name": "Monipuri sharee", "price": 1890, "thumb": "/img/p7.webp" },
-   { "id": 8, "name": "Monipuri sharee", "price": 1200, "thumb": "/img/p8.webp" }
+  { "id": 1, "name": "Monipuri sharee", "price": 2500, "thumb": "/img/products/s1.jpeg" },
+  { "id": 2, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s2.jpeg" },
+  { "id": 3, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s3.jpeg" },
+  { "id": 4, "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s4.jpeg" },
+  { "id": 5, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s5.jpeg" },
+  { "id": 6, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s6.jpeg" },
+  { "id": 7, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s7.jpeg" },
+   { "id": 8, "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s8.jpeg" }
 ]
