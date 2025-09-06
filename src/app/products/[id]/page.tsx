@@ -48,9 +48,20 @@ export default function ProductDetails({ params }: ProductsProps) {
             This is a beautiful Moniputi sharee. Perfect for any occasion and
             crafted with care.
           </p>
-          <button className="main-btn">
+          {/* <button className="main-btn">
             Order Now
-          </button>
+          </button> */}
+
+          <a
+            href={`https://wa.me/8801346893953?text=Hello, I want to order: ${encodeURIComponent(
+              product.name
+            )} (ID: ${product.id})`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="main-btn w-full block text-center"
+          >
+            Order Now
+          </a>
         </div>
       </div>
     </div>
