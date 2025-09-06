@@ -1,26 +1,35 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-b-blue-200">
+    <header className="sticky top-0 z-50 bg-headerBg border-border">
       <div className="container">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-bold text-gray-800">
-            Chandrabon
-          </Link>
+      <Link href="/" className="text-2xl font-bold text-gray-800">
+      <div className="w-[100px] h-[40px] relative">
+        <Image
+          src="/img/main-logo.png"
+          alt="Chandrabon Logo"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+    </Link>
 
           <nav className="hidden md:flex space-x-6">
-            <Link href="/about" className="hover:text-blue-600">
+            <Link href="/about" className="text-headerText">
               About Us
             </Link>
-            <Link href="/contact" className="hover:text-blue-600">
+            <Link href="/contact" className="text-headerText">
               Contact
             </Link>
-            <Link href="/products" className="hover:text-blue-600">
+            <Link href="/products" className="text-headerText">
               Products
             </Link>
           </nav>
@@ -81,6 +90,5 @@ export default function Header() {
         </nav>
       )}
     </header>
-
   );
 }

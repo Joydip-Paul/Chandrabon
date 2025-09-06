@@ -9,6 +9,8 @@ const config: Config & any = {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        headerBg: "var(--headerBg)",
+        headerText: "var(--headerText)",
         border: "var(--border)",
         txtColor: "var(--txtColor)",
         txtColorSecondary: "var(--txtColorSecondary)",

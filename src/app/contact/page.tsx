@@ -27,21 +27,21 @@ export default function ContactPage() {
             <li>
               <span className="font-semibold">Phone: </span>
               <a
-                href="tel:+8801712345678"
+                href="tel:++8801346893953"
                 className="text-blue-600 hover:underline"
               >
-                +880 1712-345678
+                +880 1346-893953
               </a>
             </li>
             <li>
               <span className="font-semibold">Facebook: </span>
               <a
-                href="https://facebook.com/chandrabon"
+                href="https://www.facebook.com/chandrabon.shop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                facebook.com/chandrabon
+                facebook.com/chandrabon.shop
               </a>
             </li>
           </ul>

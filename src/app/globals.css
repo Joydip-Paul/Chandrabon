@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-headerBg: var(--headerBg);
+  --color-headerText: var(--headerText);
   --color-border: var(--border);
   --color-txtColor: var(--txtColor);
   --color-txtColorSecondary: var(--txtColorSecondary);
@@ -22,7 +24,9 @@
 :root {
   --background: #ffffff;
   --foreground: #111111;
-  --primary: #20B46A;
+  --primary: #0b5731;
+  --headerBg: #0b5731;
+  --headerText: #fff;
   --secondary: #020210;
   --border: #d1d5db;
   --txtColor: #020210;
@@ -34,6 +38,8 @@
   --background: #111111;
   --foreground: #ffffff;
   --primary: #3b82f6;
+   --headerBg: #0b5731;
+  --headerText: #fff;
   --secondary: #a855f7;
   --txtColor: #ffffff;
   --txtColorSecondary: #a1a1aa;

@@ -34,11 +34,15 @@ export default async function FeaturedProducts() {
                 <h3 className="text-lg font-semibold text-gray-800">
                   {item.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{item.price}</p>
+                <p className="text-gray-600 mb-4">Price: {item.price}</p>
 
-                <Link href="/products">
-                  <button className="main-btn w-full">Order Now</button>
-                </Link>
+                {item?.in_stock ? (
+                  <Link href="/products">
+                    <button className="main-btn w-full">Order Now</button>
+                  </Link>
+                ) : (
+                  <div className="main-btn cursor-auto bg-gray-600">Stock out</div>
+                )}
               </div>
             </div>
           ))}
