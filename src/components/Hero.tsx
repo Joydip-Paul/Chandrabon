@@ -42,11 +42,11 @@ export default function Hero() {
         loop={true}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
-        className="w-full h-[600px]"
+        className="w-full h-[400px] sm:h-[600px]"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative w-full h-[600px]">
+            <div className="relative w-full h-[400px] sm:h-[600px]">
               {/* Background image */}
               <Image
                 src={slide.image}

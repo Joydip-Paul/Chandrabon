@@ -64,7 +64,7 @@ export default function ProductDetails({ params }: ProductsProps) {
               Price: ৳{product.price}
             </p>
             <p className="text-gray-600 mb-8">
-              This is a beautiful Moniputi sharee. Perfect for any occasion and
+              This is a beautiful Monipuri sharee. Perfect for any occasion and
               crafted with care.
             </p>
             {/* <button className="main-btn">

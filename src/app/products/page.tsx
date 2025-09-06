@@ -12,13 +12,13 @@ const Page = async () => {
       <div className="container">
         <h2 className="text-2xl font-bold text-center mb-8">Products</h2>
 
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-2 sm:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {data.map((item) => (
             <div
               key={item.id}
               className="bg-white border border-neutral-200 rounded-sm overflow-hidden"
             >
-              <div className="relative w-full h-60">
+              <div className="relative w-full h-30 sm:h-60">
                 <Image
                   src={item.thumb}
                   alt={item.name}
@@ -27,11 +27,11 @@ const Page = async () => {
                 />
               </div>
 
-              <div className="p-4 text-center">
+              <div className="p-2 sm:p-4 text-center">
                 <h3 className="text-lg font-semibold text-gray-800">
                   {item.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{item.price}</p>
+                <p className="text-gray-600 mb-4">Price: {item.price}</p>
 
                 <Link href={`/products/${item.id}`}>
                   <button className="main-btn w-full">Order Now</button>
