@@ -25,7 +25,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/img/hero2.png",
+    image: "/img/hero3.png",
     title: "Festive Season Offers",
     subtitle: "Celebrate Culture with Authentic Weaves",
     button: "Grab Now",
