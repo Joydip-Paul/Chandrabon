@@ -3,7 +3,7 @@ import products from "@/../public/data/products.json";
 import { notFound } from "next/navigation";
 
 interface Product {
-  id: number;
+  id: string;
   name: string;
   price: number;
   thumb: string;
@@ -20,7 +20,7 @@ export default function ProductDetails({ params }: ProductsProps) {
 
   // JSON থেকে product বের করো
   const product = (products as Product[]).find(
-    (item) => item.id === Number(id)
+    (item) => item.id === String(id)
   );
 
   if (!product) {
