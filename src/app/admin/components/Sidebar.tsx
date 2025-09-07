@@ -37,7 +37,7 @@ export default function Sidebar({
               <h2 className="text-lg font-semibold">Admin Menu</h2>
               <button
                 onClick={onClose}
-                className="p-2 rounded hover:bg-gray-100 transition"
+                className="p-2 rounded hover:bg-gray-100 transition cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

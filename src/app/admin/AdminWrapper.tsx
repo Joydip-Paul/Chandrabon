@@ -22,7 +22,7 @@ export default function AdminWrapper({
       {isAdmin && <Header onMenuClick={() => setIsOpen(true)} />}
 
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <main>{children}</main>
+      <main className="mt-20">{children}</main>
     </>
   );
 }
