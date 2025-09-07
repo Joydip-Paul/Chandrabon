@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header({onMenuClick}:{onMenuClick: () => void}) {
   return (
-    <header className="bg-amber-950">
+    <header className="fixed top-0 z-50 bg-amber-950 w-full">
       <div className="container">
         <div className="flex justify-between align-middle py-4">
           <div className="w-[100px] h-[40px] relative">

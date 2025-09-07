@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import Overview from "./components/overview";
 
 export default function AdminDashboard() {
   const router = useRouter();
@@ -16,7 +15,7 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <Overview />
+      <h2>Overview</h2>
     </div>
   );
 }
