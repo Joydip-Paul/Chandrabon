@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { getProducts, Product } from "../../lib/getProducts";
+// import { getProducts, Product } from "../../lib/getProducts";
 import Image from "next/image";
+import { getProducts, Product } from "@/lib/getProducts";
 
 const Page = async () => {
   const data: Product[] = await getProducts();
