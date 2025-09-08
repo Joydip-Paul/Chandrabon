@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,28 +11,37 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-headerBg border-border">
       <div className="container">
         <div className="flex justify-between items-center py-4">
-      <Link href="/" className="text-2xl font-bold text-gray-800">
-      <div className="w-[100px] h-[40px] relative">
-        <Image
-          src="/img/main-logo.png"
-          alt="Chandrabon Logo"
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-    </Link>
+          <Link href="/" className="text-2xl font-bold text-gray-800">
+            <div className="w-[100px] h-[40px] relative">
+              <Image
+                src="/img/main-logo.png"
+                alt="Chandrabon Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </Link>
 
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/about" className="text-headerText">
+          <nav className="hidden md:flex space-x-6 items-center">
+            <Link href="/about" className="text-headerText font-bold">
               About Us
             </Link>
-            <Link href="/contact" className="text-headerText">
+            <Link href="/contact" className="text-headerText font-bold">
               Contact
             </Link>
-            <Link href="/products" className="text-headerText">
+            <Link href="/products" className="text-headerText font-bold">
               Products
             </Link>
+            <a
+              href="https://www.facebook.com/chandrabon.shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full bg-white text-primary font-bold px-4 py-2 hover:bg-gray-100 transition"
+            >
+              <FaFacebook className="text-blue-600 text-xl" />
+              Facebook
+            </a>
           </nav>
 
           <button

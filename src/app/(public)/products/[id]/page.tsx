@@ -1,22 +1,23 @@
 import Image from "next/image";
 import products from "@/../public/data/products.json";
 import { notFound } from "next/navigation";
+import { FaHeart, FaShareAlt } from "react-icons/fa";
+import AlsoLike from "@/components/AlsoLike";
 
 interface Product {
   id: string;
   name: string;
+  description:string;
   price: number;
   thumb: string;
 }
 
 interface ProductsProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
-export default function ProductDetails({ params }: ProductsProps) {
-  const { id } = params;
+export default async function ProductDetails({ params }: ProductsProps) {
+  const { id } = await params;
 
   const product = (products as Product[]).find(
     (item) => item.id === String(id)
@@ -47,40 +48,60 @@ export default function ProductDetails({ params }: ProductsProps) {
 
   return (
     <>
-      <div className="container mx-auto py-12 px-4">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative w-full h-[400px]">
+      <div className="container py-8">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="relative w-full h-[500px] bg-gray-100">
             <Image
               src={product.thumb}
               alt={product.name}
               fill
               className="object-cover"
+              priority
             />
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-            <p className="text-2xl text-green-600 font-semibold mb-6">
-              Price: ৳{product.price}
+            <h1 className="text-3xl font-bold mb-3">{product.name}</h1>
+            <p className="text-lg">
+              {product.description}
             </p>
-            <p className="text-gray-600 mb-8">
-              This is a beautiful Monipuri sharee. Perfect for any occasion and
-              crafted with care.
-            </p>
-            {/* <button className="main-btn">
-            Order Now
-          </button> */}
 
-            <a
-              href={`https://wa.me/8801346893953?text=Hello, I want to order: ${encodeURIComponent(
-                product.name
-              )} (ID: ${product.id})`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="main-btn w-full block text-center"
-            >
-              Order Now
-            </a>
+            <div className="mt-5 flex justify-between gap-3 py-6 items-center">
+              <p className="text-2xl text-green-700 font-semibold">
+                ৳ {product.price}
+              </p>
+
+              <div className="flex items-center border max-w-max">
+                <button className="px-3 py-2">-</button>
+                <span className="px-4">1</span>
+                <button className="px-3 py-2">+</button>
+              </div>
+            </div>
+
+            <div className="divide-y border-t border-b mb-6">
+              <button className="w-full text-left py-3 font-medium">
+                Product Code <span className="float-right">#{product.id}</span>
+              </button>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <a
+                href={`https://wa.me/8801346893953?text=Hello, I want to order: ${encodeURIComponent(
+                  product.name
+                )} (ID: ${product.id})`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="main-btn flex-1 text-center"
+              >
+                ORDER NOW
+              </a>
+              <button className="border px-4 py-3">
+                <FaHeart />
+              </button>
+              {/* <button className="border px-4 py-3 rounded">
+                <FaShareAlt />
+              </button> */}
+            </div>
           </div>
         </div>
       </div>
@@ -90,6 +111,9 @@ export default function ProductDetails({ params }: ProductsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+        <div className="border-t border-border mt-20">
+          <AlsoLike />
+        </div>
     </>
   );
 }

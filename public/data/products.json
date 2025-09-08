@@ -1,10 +1,58 @@
 [
-  { "id": "1cp2500", "name": "Monipuri sharee", "price": 2500, "thumb": "/img/products/s1.jpeg" },
-  { "id": "2cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s2.jpeg" },
-  { "id": "3cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s3.jpeg" },
-  { "id": "4cp2750", "name": "Monipuri sharee", "price": 2750, "thumb": "/img/products/s4.jpeg" },
-  { "id": "5cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s5.jpeg" },
-  { "id": "6cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s6.jpeg" },
-  { "id": "7cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s7.jpeg" },
-   { "id": "8cp2750", "name": "Monipuri sharee", "price": 1690, "thumb": "/img/products/s8.jpeg" }
+  { 
+    "id": "1cp2500", 
+    "name": "Classic Red Monipuri Sharee", 
+    "price": 2500, 
+    "thumb": "/img/products/s1.jpeg",
+    "description": "A traditional red Monipuri sharee with intricate handwoven designs. Perfect for weddings, festivals, and cultural occasions. Crafted from soft cotton, this elegant piece ensures comfort along with timeless beauty. The bold red shade enhances your festive look, while the detailed weaving reflects the authentic Monipuri heritage."
+  },
+  { 
+    "id": "2cp2750", 
+    "name": "Royal Blue Monipuri Sharee", 
+    "price": 2750, 
+    "thumb": "/img/products/s2.jpeg",
+    "description": "Elegant blue Monipuri sharee crafted with fine cotton and detailed motifs. A stylish choice for any festive event. Its lightweight texture makes it easy to drape, while the bold blue color highlights sophistication and charm. A perfect combination of tradition and elegance for both casual and formal gatherings."
+  },
+  { 
+    "id": "3cp2750", 
+    "name": "Elegant Green Monipuri Sharee", 
+    "price": 2750, 
+    "thumb": "/img/products/s3.jpeg",
+    "description": "Handwoven green Monipuri sharee featuring traditional patterns. Lightweight and comfortable for all-day wear. The soothing green shade adds a fresh and graceful vibe, making it ideal for cultural functions, parties, or office wear. Every thread tells the story of skilled craftsmanship and authentic artistry."
+  },
+  { 
+    "id": "4cp2750", 
+    "name": "Golden Touch Monipuri Sharee", 
+    "price": 2750, 
+    "thumb": "/img/products/s4.jpeg",
+    "description": "A rich golden-toned Monipuri sharee with detailed weaving. Adds a royal touch to your festive wardrobe. The shimmering golden finish makes it stand out in any occasion, while the fine handloom artistry preserves cultural tradition. Best suited for weddings, engagements, and grand celebrations."
+  },
+  { 
+    "id": "5cp1690", 
+    "name": "Soft Pink Monipuri Sharee", 
+    "price": 1690, 
+    "thumb": "/img/products/s5.jpeg",
+    "description": "Beautiful pink Monipuri sharee with delicate motifs. Lightweight and perfect for casual gatherings and celebrations. The soft pink shade brings a feminine charm, while the breathable fabric ensures comfort in every season. A graceful attire that combines elegance with everyday usability."
+  },
+  { 
+    "id": "6cp1690", 
+    "name": "Bright Yellow Monipuri Sharee", 
+    "price": 1690, 
+    "thumb": "/img/products/s6.jpeg",
+    "description": "Sunny yellow Monipuri sharee that brings charm and brightness to your look. Ideal for daytime occasions. Its cheerful tone reflects energy and positivity, making it a perfect choice for haldi ceremonies, casual meetups, or festive mornings. Crafted with care, it blends style with traditional comfort."
+  },
+  { 
+    "id": "7cp1690", 
+    "name": "Royal Black Monipuri Sharee", 
+    "price": 1690, 
+    "thumb": "/img/products/s7.jpeg",
+    "description": "Classic black Monipuri sharee with traditional weaving patterns. A timeless piece for both modern and cultural styling. Its bold black tone makes it versatile for evening wear, while the fine craftsmanship ensures authenticity. Suitable for parties, cultural programs, or any elegant occasion."
+  },
+  { 
+    "id": "8cp1690", 
+    "name": "Elegant White Monipuri Sharee", 
+    "price": 1690, 
+    "thumb": "/img/products/s8.jpeg",
+    "description": "Graceful white Monipuri sharee, symbol of purity and elegance. A versatile choice for all occasions. Its minimal yet refined look makes it suitable for both formal and casual wear. The soothing white color enhances sophistication, while the traditional weaving keeps it rooted in cultural heritage."
+  }
 ]

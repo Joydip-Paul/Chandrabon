@@ -108,3 +108,7 @@
 .delay-400 {
   animation-delay: 0.4s;
 }
+
+button {
+  cursor: pointer !important;
+}
