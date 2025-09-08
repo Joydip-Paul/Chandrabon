@@ -33,7 +33,7 @@ export default function Sidebar({
             className="fixed top-0 right-0 w-80 h-full bg-white shadow-lg z-50 flex flex-col"
           >
             {/* Header */}
-            <div className="flex justify-between items-center border-b px-6 py-4">
+            <div className="flex justify-between items-center border-b px-4 py-2">
               <h2 className="text-lg font-semibold">Admin Menu</h2>
               <button
                 onClick={onClose}
@@ -57,12 +57,12 @@ export default function Sidebar({
             </div>
 
             {/* Menu Items */}
-            <ul className="flex flex-col gap-3 p-6">
+            <ul className="flex flex-col gap-3 p-4">
               <li>
                 <Link
                   href="/admin"
                   onClick={onClose}
-                  className="block border rounded-md px-4 py-3 hover:bg-gray-50 transition"
+                  className="block border px-4 py-3 hover:bg-gray-50 transition"
                 >
                   Dashboard
                 </Link>
@@ -71,27 +71,9 @@ export default function Sidebar({
                 <Link
                   href="/admin/products"
                   onClick={onClose}
-                  className="block border rounded-md px-4 py-3 hover:bg-gray-50 transition"
+                  className="block border px-4 py-3 hover:bg-gray-50 transition"
                 >
                   Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/admin/orders"
-                  onClick={onClose}
-                  className="block border rounded-md px-4 py-3 hover:bg-gray-50 transition"
-                >
-                  Orders
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/admin/users"
-                  onClick={onClose}
-                  className="block border rounded-md px-4 py-3 hover:bg-gray-50 transition"
-                >
-                  Users
                 </Link>
               </li>
             </ul>

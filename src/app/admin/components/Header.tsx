@@ -15,7 +15,7 @@ export default function Header({onMenuClick}:{onMenuClick: () => void}) {
               priority
             />
           </div>
-          <button className="border border-white flex align-middle gap-2 px-3 py-2 rounded-sm cursor-pointer" onClick={onMenuClick}>
+          <button className="border border-white flex align-middle gap-2 px-3 py-2 cursor-pointer" onClick={onMenuClick}>
             <h3 className="text-white leading-[1.4]">Menu</h3>
             <svg
               className="w-6 h-6 text-white"
