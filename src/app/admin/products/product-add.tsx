@@ -14,6 +14,7 @@ export default function AddProduct({
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
   const [price, setPrice] = useState("");
+  const [productCode, setProductCode] = useState("");
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
 
@@ -22,6 +23,7 @@ export default function AddProduct({
       setName("");
       setDesc("");
       setPrice("");
+      setProductCode("");
       setImage(null);
       setPreview(null);
     }
@@ -41,7 +43,7 @@ export default function AddProduct({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newProduct = { name, desc, price, image };
+    const newProduct = { name, desc, price, productCode, image };
     console.log("New Product:", newProduct);
 
     onClose();
@@ -120,6 +122,20 @@ export default function AddProduct({
                     value={price}
                     placeholder="2590"
                     onChange={(e) => setPrice(e.target.value)}
+                    className="w-full border rounded px-3 py-2"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium mb-1">
+                    Product Code
+                  </label>
+                  <input
+                    type="text"
+                    value={productCode}
+                    placeholder="3cf2000"
+                    onChange={(e) => setProductCode(e.target.value)}
                     className="w-full border rounded px-3 py-2"
                     required
                   />

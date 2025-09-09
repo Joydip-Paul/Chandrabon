@@ -18,7 +18,7 @@ export default function AdminLogin() {
         router.push('/admin');
     }
     else {
-        setError("Invalid credentials");
+        setError(`Mobile: 1122 and Password: 1234`);
     }
     console.log("Login");
   };
@@ -26,8 +26,8 @@ export default function AdminLogin() {
   return (
     <>
       <div className="flex items-center justify-center min-h-screen bg-gray-200 px-4">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-        <h1 className="text-xl font-bold mb-6 text-center">Admin Login</h1>
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-lg">
+        <h1 className="text-xl font-bold mb-6">Admin Login</h1>
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
 
         <form onSubmit={handleLogin} className="space-y-4">
