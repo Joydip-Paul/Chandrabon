@@ -11,7 +11,7 @@ export default function ProductListPage() {
       desc: "Handloom authentic sharee from Sylhet weavers",
       price: 2500,
       image: "/img/products/s1.jpeg",
-      productCode: "1cf2000"
+      productCode: "1cf2000",
     },
     {
       id: "23ddsf32343",
@@ -19,7 +19,7 @@ export default function ProductListPage() {
       desc: "Lightweight cotton, perfect for daily wear",
       price: 1800,
       image: "/img/products/s2.jpeg",
-      productCode: "2cf2000"
+      productCode: "2cf2000",
     },
     {
       id: "1cefsaddd334343",
@@ -27,7 +27,7 @@ export default function ProductListPage() {
       desc: "Handloom authentic sharee from Sylhet weavers",
       price: 2500,
       image: "/img/products/s8.jpeg",
-      productCode: "3cf2000"
+      productCode: "3cf2000",
     },
     {
       id: "23ddsf3d2343",
@@ -35,7 +35,7 @@ export default function ProductListPage() {
       desc: "Lightweight cotton, perfect for daily wear",
       price: 1800,
       image: "/img/products/s3.jpeg",
-      productCode: "4cf2000"
+      productCode: "4cf2000",
     },
     {
       id: "1ce43234343",
@@ -43,7 +43,7 @@ export default function ProductListPage() {
       desc: "Handloom authentic sharee from Sylhet weavers",
       price: 2500,
       image: "/img/products/s5.jpeg",
-      productCode: "5cf2000"
+      productCode: "5cf2000",
     },
     {
       id: "23ddgaed32343",
@@ -51,7 +51,7 @@ export default function ProductListPage() {
       desc: "Lightweight cotton, perfect for daily wear",
       price: 1800,
       image: "/img/products/s9.jpeg",
-      productCode: "6cf2000"
+      productCode: "6cf2000",
     },
   ];
 
@@ -59,7 +59,6 @@ export default function ProductListPage() {
 
   return (
     <>
-    <div className="mt-20">
       <div className="py-3">
         <div className="container">
           <div className="flex justify-between items-center mb-6">
@@ -85,7 +84,8 @@ export default function ProductListPage() {
                 </div>
 
                 <h2 className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 border border-gray-300 rounded-sm mb-2 truncate">
-                  <span className="font-bold">Product Code:</span> {item.productCode}
+                  <span className="font-bold">Product Code:</span>{" "}
+                  {item.productCode}
                 </h2>
                 <h3 className="text-lg font-semibold text-gray-900">
                   {item.name}
@@ -143,7 +143,6 @@ export default function ProductListPage() {
           </div>
         </div>
       </div>
-    </div>
 
       <AddProduct
         isOpen={isDrawerOpen}
