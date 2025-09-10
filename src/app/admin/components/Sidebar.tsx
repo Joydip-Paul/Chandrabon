@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import LogoutButton from "../logout/logout";
 
 export default function Sidebar({
   isOpen,
@@ -76,6 +77,8 @@ export default function Sidebar({
                   Products
                 </Link>
               </li>
+
+                <LogoutButton />
             </ul>
           </motion.div>
         </>

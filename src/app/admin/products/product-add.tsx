@@ -14,6 +14,7 @@ export default function AddProduct({
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
   const [price, setPrice] = useState("");
+  const [isFeatured, setIsFeatured] = useState(false);
   const [productCode, setProductCode] = useState("");
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
@@ -23,6 +24,7 @@ export default function AddProduct({
       setName("");
       setDesc("");
       setPrice("");
+      setIsFeatured(false);
       setProductCode("");
       setImage(null);
       setPreview(null);
@@ -43,7 +45,7 @@ export default function AddProduct({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newProduct = { name, desc, price, productCode, image };
+    const newProduct = { name, desc, price, productCode, isFeatured, image };
     console.log("New Product:", newProduct);
 
     onClose();
@@ -94,7 +96,7 @@ export default function AddProduct({
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Monipuri shiuli shuti sharee"
-                    className="w-full border rounded px-3 py-2"
+                    className="w-full border border-border rounded px-3 py-2"
                     required
                   />
                 </div>
@@ -107,7 +109,7 @@ export default function AddProduct({
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
                     placeholder="100% cotton handloom saree. Made with local artisan."
-                    className="w-full border rounded px-3 py-2"
+                    className="w-full border border-border rounded px-3 py-2"
                     rows={3}
                     required
                   />
@@ -122,7 +124,7 @@ export default function AddProduct({
                     value={price}
                     placeholder="2590"
                     onChange={(e) => setPrice(e.target.value)}
-                    className="w-full border rounded px-3 py-2"
+                    className="w-full border border-border rounded px-3 py-2"
                     required
                   />
                 </div>
@@ -136,9 +138,25 @@ export default function AddProduct({
                     value={productCode}
                     placeholder="3cf2000"
                     onChange={(e) => setProductCode(e.target.value)}
-                    className="w-full border rounded px-3 py-2"
+                    className="w-full border border-border rounded px-3 py-2"
                     required
                   />
+                </div>
+
+                  <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="featured"
+                    checked={isFeatured}
+                    onChange={(e) => setIsFeatured(e.target.checked)} 
+                    className="h-4 w-4 text-green-600 border-gray-300 rounded"
+                  />
+                    <label
+                    htmlFor="featured"
+                    className="text-sm font-medium text-gray-700"
+                  >
+                    Mark as Featured Product
+                  </label>
                 </div>
 
                 <div>
@@ -151,7 +169,7 @@ export default function AddProduct({
                     onChange={(e) =>
                       handleImageChange(e.target.files?.[0] || null)
                     }
-                    className="w-full border rounded px-3 py-2 cursor-pointer"
+                    className="w-full border border-border rounded px-3 py-2 cursor-pointer"
                     required
                   />
 

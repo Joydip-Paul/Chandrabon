@@ -22,11 +22,11 @@ export default function ProductListPage() {
       productCode: "2cf2000"
     },
     {
-      id: "1cefsa334343",
+      id: "1cefsaddd334343",
       name: "Monipuri Sharee Premium",
       desc: "Handloom authentic sharee from Sylhet weavers",
       price: 2500,
-      image: "/img/products/s6.jpeg",
+      image: "/img/products/s8.jpeg",
       productCode: "3cf2000"
     },
     {
@@ -50,7 +50,7 @@ export default function ProductListPage() {
       name: "Cotton Monipuri Sharee",
       desc: "Lightweight cotton, perfect for daily wear",
       price: 1800,
-      image: "/img/products/s4.jpeg",
+      image: "/img/products/s9.jpeg",
       productCode: "6cf2000"
     },
   ];
