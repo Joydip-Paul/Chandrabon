@@ -5,9 +5,9 @@ export async function POST() {
 
   res.cookies.set("isAdmin", "true", {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production", // local e false, prod e true
+    secure: process.env.NODE_ENV === "production",
     path: "/",
-    maxAge: 60 * 60, // 1 hr
+    maxAge: 60 * 60,
   });
 
   return res;
