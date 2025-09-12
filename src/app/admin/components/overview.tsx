@@ -33,7 +33,7 @@ export default function Overview() {
     hour < 12 ? "Good Morning" : hour < 18 ? "Good Afternoon" : "Good Evening";
 
   return (
-    <div className="container pt-25">
+    <div className="container">
       <h1 className="text-2xl font-bold mb-6">
         {greeting}, Admin 👋
       </h1>
