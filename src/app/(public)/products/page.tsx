@@ -1,4 +1,4 @@
-import ProductGrid from "@/components/productGrid";
+import ProductGrid from "@/app/(public)/components/productGrid";
 import { getProducts, Product } from "@/lib/getProducts";
 
 export default async function Page() {

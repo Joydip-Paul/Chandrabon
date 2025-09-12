@@ -2,7 +2,7 @@ import Image from "next/image";
 import products from "@/../public/data/products.json";
 import { notFound } from "next/navigation";
 import { FaHeart, FaShareAlt } from "react-icons/fa";
-import AlsoLike from "@/components/AlsoLike";
+import AlsoLike from "@/app/(public)/components/AlsoLike";
 
 interface Product {
   id: string;
