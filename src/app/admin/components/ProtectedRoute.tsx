@@ -1,17 +1,17 @@
-"use client";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
-export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
+export default async function ProtectedRoute({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const cookieStore = await cookies();
+  const isAdmin = cookieStore.get("isAdmin");
 
-  useEffect(() => {
-    const isAdmin = localStorage.getItem("isAdmin");
-
-    if (!isAdmin && window.location.pathname !== "/admin/login") {
-      router.replace("/admin/login");
-    }
-  }, [router]);
+  if (!isAdmin) {
+    redirect("/admin/login");
+  }
 
   return <>{children}</>;
 }
