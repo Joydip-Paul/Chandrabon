@@ -18,7 +18,7 @@ export default function AdminWrapper({ children }: { children: React.ReactNode }
     <>
       <Header onMenuClick={() => setIsOpen(true)} />
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <main className="pt-25">{children}</main>
+      <main className="pt-20">{children}</main>
     </>
   );
 }
