@@ -1,16 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import { usePathname } from "next/navigation";
 
 export default function AdminWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  // Login page e header/sidebar hide
-  if (pathname === "/admin/login") {
+  const isLoginPage = pathname === "/admin/login";
+
+  useEffect(() => {
+    const isAdmin = localStorage.getItem("isAdmin");
+    if (!isAdmin && !isLoginPage) {
+      router.replace("/admin/login");
+    }
+
+    setLoading(false);
+  }, [pathname, router, isLoginPage]);
+
+  if (loading) return null;
+
+  if (isLoginPage) {
     return <>{children}</>;
   }
 
@@ -18,7 +32,7 @@ export default function AdminWrapper({ children }: { children: React.ReactNode }
     <>
       <Header onMenuClick={() => setIsOpen(true)} />
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <main className="pt-20">{children}</main>
+      <main>{children}</main>
     </>
   );
 }
